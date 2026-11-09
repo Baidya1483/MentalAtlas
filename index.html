@@ -10,8 +10,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Mental Atlas — 29 Mental Models, Animated &amp; Explained Simply</title>
-<meta name="description" content="A visual field guide to 29 mental models. Every model explained in the simplest words, with a step-by-step animation you can play, pause and scrub.">
+<title>The Mental Atlas — 36 Mental Models, Animated &amp; Explained Simply</title>
+<meta name="description" content="A visual field guide to 36 mental models. Every model explained in the simplest words, with a step-by-step animation you can play, pause and scrub.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232F6B3F'/%3E%3Ccircle cx='16' cy='16' r='7.5' fill='none' stroke='%23F3EFE4' stroke-width='2.4'/%3E%3Cpath d='M16 2v6M16 24v6M2 16h6M24 16h6' stroke='%23F3EFE4' stroke-width='2.4'/%3E%3C/svg%3E">
 <script>try{const t=localStorage.getItem('atlas-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <!-- fonts are embedded as base64 data-URIs (see a0-fonts.html) — no CDN needed -->
@@ -208,6 +208,7 @@ a.mon-row:hover{background:var(--paper2)}
 .pd-range a{font:500 10.5px/1 var(--font-m);letter-spacing:.05em;border:1px solid var(--line-strong);color:var(--ink2);text-decoration:none;padding:7px 11px;border-radius:var(--r-ctl);transition:.2s}
 .pd-range a:hover{background:var(--paper3);border-color:var(--ink)}
 .pd-range a b{color:var(--terra);font-weight:600;margin-right:5px}
+</style>
 <style>
 /* ================================================================
    7 · MODULES (topic pages)
@@ -266,7 +267,7 @@ figure.demo{border:1px solid var(--line-strong);border-radius:var(--r-card);back
   background-image:linear-gradient(var(--gridl) 1px,transparent 1px),linear-gradient(90deg,var(--gridl) 1px,transparent 1px);
   background-size:26px 26px;cursor:pointer}
 .stage-wrap svg.stage{display:block;width:100%;height:auto;transition:opacity .16s ease}
-.stage-hint{position:absolute;top:11px;right:14px;font:600 9.5px/1 var(--font-m);letter-spacing:.18em;color:var(--muted);display:flex;gap:8px;align-items:center;transition:opacity .35s;pointer-events:none}
+.stage-hint{flex:none;order:6;margin-left:6px;font:600 9.5px/1 var(--font-m);letter-spacing:.18em;color:var(--muted);display:flex;gap:8px;align-items:center;transition:opacity .35s;pointer-events:none}
 .stage-hint .sh-dot{width:6px;height:6px;border-radius:50%;background:var(--terra);animation:blink 1.5s infinite}
 .demo.armed .stage-hint{opacity:0}
 /* caption panel */
@@ -394,6 +395,7 @@ footer.site b{color:var(--green)}
   ul.ledger li{grid-template-columns:34px 1fr}
   ul.steps li{grid-template-columns:40px 1fr}
   .seg{order:5;min-width:100%}
+  .stage-hint{margin-left:auto}
   .rev-sheet{padding:18px 16px}
   .monitor{width:100%}
 }
@@ -419,10 +421,10 @@ footer.site b{color:var(--green)}
 
 <header class="site">
   <button id="menuBtn" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-  <a class="brand" href="#hero"><b>A·29</b><span>MENTAL&nbsp;ATLAS</span></a>
-  <span class="h-title">29 mental models · animated, explained, unforgettable</span>
+  <a class="brand" href="#hero"><b>A·36</b><span>MENTAL&nbsp;ATLAS</span></a>
+  <span class="h-title">36 mental models · animated, explained, unforgettable</span>
   <div class="h-right">
-    <span id="doneChip">0 / 29 LEARNED</span>
+    <span id="doneChip">0 / 36 LEARNED</span>
     <button id="sndBtn" title="Sound effects on / off" aria-label="Toggle sound effects">
       <span class="ic ic-on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.4 5.6a9 9 0 0 1 0 12.8"/></svg></span>
       <span class="ic ic-off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4z"/><path d="M22 9l-6 6M16 9l6 6"/></svg></span>
@@ -443,9 +445,9 @@ footer.site b{color:var(--green)}
   <canvas id="heroCanvas" aria-hidden="true"></canvas>
   <div class="hero-inner">
     <div class="h-eyebrow">A VISUAL FIELD GUIDE · PLAIN WORDS · ZERO JARGON</div>
-    <h2>29 mental models. One field guide. <em>A clearer mind.</em></h2>
+    <h2>36 mental models. One field guide. <em>A clearer mind.</em></h2>
     <p class="h-sub">Every model explained in the simplest possible words — and every one brought to life with a step-by-step animation you can play, pause, scrub and replay until it clicks. At every step: what happens, and why it happens.</p>
-    <div class="h-stats"><span>29 MODELS</span><span>4 PARTS</span><span>145+ ANIMATED STEPS</span><span>WHAT + WHY EVERYWHERE</span><span>WORKS OFFLINE</span></div>
+    <div class="h-stats"><span>36 MODELS</span><span>5 PARTS</span><span>180+ ANIMATED STEPS</span><span>WHAT + WHY EVERYWHERE</span><span>WORKS OFFLINE</span></div>
     <div class="h-cta">
       <a class="btn-solid" href="#t01">BEGIN WITH MIND TRAPS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg></a>
       <a class="btn-ghost" href="#revision">REVISION SHEET <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/></svg></a>
@@ -494,7 +496,7 @@ footer.site b{color:var(--green)}
 <footer class="site">
   <div class="wrap">
     <span>THE MENTAL ATLAS — <b>one file · works offline · no tracking</b></span>
-    <span>29 MODELS · 4 PARTS · DAY/NIGHT READING</span>
+    <span>36 MODELS · 5 PARTS · DAY/NIGHT READING</span>
     <span>MADE TO BE RE-READ</span>
   </div>
 </footer>
@@ -605,7 +607,9 @@ const PARTS=[
  {rn:'III',k:'PART III · TOPICS 13–18',title:'The Thinker\u2019s Toolkit',a:13,b:18,
   sub:'Six tools for thinking sharper and building skill that lasts: break problems to atoms, flip them around, look one move deeper — then enter flow and practise on purpose.'},
  {rn:'IV',k:'PART IV · TOPICS 19–29',title:'The Strategist\u2019s Shelf',a:19,b:29,
-  sub:'Eleven models for aiming effort, trading wisely and compounding small wins — including the two that keep what you learn from leaking away.'}
+  sub:'Eleven models for aiming effort, trading wisely and compounding small wins — including the two that keep what you learn from leaking away.'},
+ {rn:'V',k:'PART V · TOPICS 30–36',title:'The Sage\u2019s Compass',a:30,b:36,
+  sub:'Seven grand models for reading reality as it is: think in odds and loops, judge fairly, respect old fences, and know the edges of your own map.'}
 ];
 const TOPICS=[];
 
@@ -625,8 +629,7 @@ class Player{
       '<span class="dh-t">'+topic.title+'</span>'+
       '<span class="dh-step"><b data-cur>1</b> / '+this.n+'</span></div>'+
       '<div class="stage-wrap" tabindex="0" role="img" aria-label="Step-by-step animated diagram: '+topic.title+'">'+
-      '<svg class="stage" viewBox="0 0 '+vb[0]+' '+vb[1]+'" preserveAspectRatio="xMidYMid meet"></svg>'+
-      '<div class="stage-hint"><span class="sh-dot"></span>PRESS&nbsp;PLAY</div></div>'+
+      '<svg class="stage" viewBox="0 0 '+vb[0]+' '+vb[1]+'" preserveAspectRatio="xMidYMid meet"></svg></div>'+
       '<div class="demo-cap" data-cap>'+
       '<div class="dc-step"><span class="dc-n" data-n>STEP 1</span><span class="dc-l" data-l></span></div>'+
       '<div class="dc-row what"><span class="dc-k">WHAT HAPPENS</span><p data-what></p></div>'+
@@ -636,7 +639,8 @@ class Player{
       '<button class="ctl" data-a="prev" aria-label="Previous step" title="Previous step">'+ICON.prev+'</button>'+
       '<button class="ctl big" data-a="play" aria-label="Play or pause" title="Play / Pause (space)">'+ICON.play+'</button>'+
       '<button class="ctl" data-a="next" aria-label="Next step" title="Next step">'+ICON.next+'</button>'+
-      '<div class="seg" data-seg role="tablist" aria-label="Animation steps"></div></div>';
+      '<div class="seg" data-seg role="tablist" aria-label="Animation steps"></div>'+
+      '<div class="stage-hint"><span class="sh-dot"></span>PRESS&nbsp;PLAY</div></div>';
     this.svg=fig.querySelector('svg.stage');
     this.capEl=fig.querySelector('[data-cap]');
     this.ctx={svg:this.svg,refs:{}};
@@ -703,7 +707,7 @@ class Player{
     if(a==='play'){ SFX[this.playing?'stop_':'start'](); this.playing?this.pause():this.play() }
     else if(a==='next'){ SFX.up(); this.next() }
     else if(a==='prev'){ SFX.down(); this.prev() }
-    else if(a==='reset'){ SFX.rewind(); this.reset() }
+    else if(a==='reset'){ SFX.rewind(); this.fig.classList.remove('armed'); this.reset() }
   }
   play(){
     this.fig.classList.add('armed');
@@ -3790,6 +3794,853 @@ apply(S,i,p){const P=k=>SP(i,p,k),s0=P(0),s1=P(1),s2=P(2),s3=P(3),s4=P(4),R=S.re
 }},
 });
 /* ================================================================
+   PART V · THE SAGE’S COMPASS · topics 30–33
+================================================================ */
+/* ---------------- 30 · PROBABILISTIC THINKING ---------------- */
+TOPICS.push({
+n:30,id:'prob',part:4,title:'Probabilistic Thinking',
+one:'Trade the hard words “yes” and “no” for a dial: think in odds, check the base rate, and your plans survive the losing days.',
+what:[
+ 'The world mostly answers in shades, not switches. The same launch can follow the same playbook and still fail on a Tuesday; a sloppy one sometimes lands. Treating each question as a hard yes or no throws that texture away — and makes every miss feel like a betrayal.',
+ '<b>Probabilistic thinking</b> keeps the shades: it swaps “it will work” for “it works about 7 times in 10.” You still decide and act — but the plan now has room for the losing days, and your surprises get smaller.'
+],
+why:[
+ '<b>The future deals repeats, not verdicts.</b> Outcomes come from known causes plus noise. The noise is real: a single roll can go against you even when the odds are on your side.',
+ '<b>Odds can be checked; certainties cannot.</b> “About 70%” can be compared, scored and updated when facts arrive. “Definitely” has nowhere to go but down.',
+ '<b>Base rates keep stories honest.</b> Before judging one case, ask how often this kind of thing works out. Stories are usually warmer than the statistics — the rate is the anchor.'
+],
+life:[
+ '<b>The umbrella call.</b> “Might rain” beats “won’t” under a heavy sky: carry it, lose nothing; leave it, soak your laptop.',
+ '<b>The hiring read.</b> One great interview is a signal, not a promise — strong teams still probe for more evidence and plan for the chance it misses.',
+ '<b>The safety margin.</b> Bridges, budgets and launch dates are built with slack, because their builders think in tails: “what if the 1-in-10 day shows up?”'
+],
+use:[
+ '<b>Replace “will it?” with “how often?”</b> Put a rough number on the guess. A shaky estimate still beats a bare yes or no.',
+ '<b>Check the base rate first.</b> Before a decision, find how often similar attempts succeed — then ask what makes yours different, in evidence not adjectives.',
+ '<b>Plan the losing branch.</b> If the plan only works when everything goes right, it is a wish. Sketch the “what if it doesn’t” route before you need it.',
+ '<b>Score your guesses.</b> Write a few predictions with odds, then check them later. Calibrating yourself is a skill, and it grows with reps.'
+],
+take:[
+ 'Odds invite evidence; certainties invite surprises.',
+ 'Base rate first, story second.',
+ 'A plan with room to lose is sturdier than one that needs a perfect day.'
+],
+ask:'Am I making a prediction — or just picking a side?',
+demo:{
+vb:[760,430],
+build(S){const g=S.svg,R=S.refs;
+  R.q1=E('g',{opacity:0},g);
+  E('rect',{class:'sv-nd',x:230,y:64,width:300,height:44,rx:8},R.q1);
+  T('WILL THE LAUNCH LAND?',{class:'sv-tb','text-anchor':'middle',x:380,y:92},R.q1);
+  R.yes=pill(g,285,168,'YES','sv-pillg'); R.no=pill(g,475,168,'NO','sv-pillr');
+  T('PICK ONE — BUT THE WORLD WON’T',{class:'sv-l2','text-anchor':'middle',x:380,y:214},R.q1);
+  R.tens=E('g',{opacity:0},g);
+  T('TEN PAST LAUNCHES · IDENTICAL PREP',{class:'sv-l','text-anchor':'middle',x:380,y:64},R.tens);
+  R.tiles=[];
+  const good=[1,1,1,0,1,1,1,0,1,0];
+  for(let k=0;k<10;k++){const x=76+k*64;
+    const t=E('g',{},R.tens);
+    E('rect',{class:'sv-nd',x:x,y:92,width:52,height:52,rx:8},t);
+    T('D'+(k+1),{class:'sv-l2','text-anchor':'middle',x:x+26,y:114},t);
+    const ok=E('g',{opacity:0},t);
+    E('path',{class:'sv-g',d:'M'+(x+14)+',122 l8,10 l16,-20'},ok);
+    const bd=E('g',{opacity:0},t);
+    E('path',{class:'sv-r',d:'M'+(x+16)+',108 l20,20 M'+(x+36)+',108 l-20,20'},bd);
+    R.tiles.push({ok,bd,good:good[k]===1});
+  }
+  R.tally=T('7 OF 10 WENT WELL — SAME PREP, DIFFERENT DAYS',{class:'sv-l2','text-anchor':'middle',x:380,y:180},R.tens);
+  R.gauge=E('g',{opacity:0},g);
+  E('path',{class:'sv-ink',d:'M270,318 A110,110 0 0 1 490,318'},R.gauge);
+  T('0%',{class:'sv-l',x:258,y:336},R.gauge); T('50%',{class:'sv-l','text-anchor':'middle',x:380,y:196},R.gauge); T('100%',{class:'sv-l',x:484,y:336},R.gauge);
+  R.needle=E('path',{class:'sv-r',d:'M380,318 L276,318'},R.gauge);
+  E('circle',{class:'sv-dot',cx:380,cy:318,r:4},R.gauge);
+  R.val=T('0%',{class:'sv-num','text-anchor':'middle',x:380,y:286},R.gauge);
+  R.odds=pill(g,380,158,'ABOUT 7 IN 10','sv-pillg');
+  R.bars=E('g',{opacity:0},g);
+  E('path',{class:'sv-ink',d:'M120,380 H640'},R.bars);
+  R.bp=E('rect',{class:'sv-ndg',x:220,y:380,width:70,height:0},R.bars);
+  R.ba=E('rect',{class:'sv-nd',x:430,y:380,width:70,height:0},R.bars);
+  T('PREDICTED',{class:'sv-l','text-anchor':'middle',x:255,y:402},R.bars);
+  T('ACTUAL',{class:'sv-l','text-anchor':'middle',x:465,y:402},R.bars);
+  R.vp=T('≈70',{class:'sv-numg','text-anchor':'middle',x:255,y:180},R.bars);
+  R.va=T('70',{class:'sv-num','text-anchor':'middle',x:465,y:180},R.bars);
+  T('OUT OF 100 SIMILAR LAUNCHES',{class:'sv-l','text-anchor':'middle',x:380,y:52},R.bars);
+  R.cal=pill(g,380,110,'CALIBRATED — FORECAST ≈ REALITY','sv-pillg');
+  R.cafe=E('g',{opacity:0},g);
+  E('rect',{class:'sv-nd',x:180,y:60,width:400,height:44,rx:8},R.cafe);
+  T('WILL THE CAFÉ SURVIVE YEAR ONE?',{class:'sv-tb','text-anchor':'middle',x:380,y:88},R.cafe);
+  T('BASE RATE · CAFÉS LIKE THIS',{class:'sv-l',x:120,y:206},R.cafe);
+  E('rect',{class:'sv-nd',x:120,y:220,width:520,height:26,rx:13},R.cafe);
+  R.bfill=E('rect',{class:'sv-fgs',x:120,y:220,width:0,height:26,rx:13},R.cafe);
+  R.blabel=T('4 IN 10',{class:'sv-numg',x:120,y:286},R.cafe);
+  R.story=pill(g,470,320,'“BUT THIS OWNER HAS PASSION!”','sv-pilla');
+  R.hold=pill(g,620,168,'THE RATE HOLDS','sv-pillg');
+  R.fork=E('g',{opacity:0},g);
+  R.dec=pill(R.fork,120,230,'DECISION','sv-pill');
+  R.p1=E('path',{class:'sv-inkt',d:'M186,224 C300,224 330,140 396,140'},R.fork);
+  R.p2=E('path',{class:'sv-inkt',d:'M186,236 C300,236 330,320 396,320'},R.fork);
+  R.tp=pill(R.fork,530,140,'NEEDS A PERFECT DAY','sv-pilla');
+  R.bp2=pill(R.fork,530,320,'ROOM FOR THE 3-IN-10','sv-pillg');
+  R.xx=E('g',{opacity:0},R.fork);
+  E('path',{class:'sv-r',d:'M648,132 l20,20 M668,132 l-20,20'},R.xx);
+  R.ck=E('g',{opacity:0},R.fork);
+  E('path',{class:'sv-g',d:'M628,318 l9,10 l19,-21'},R.ck);
+  R.fin=pill(R.fork,380,60,'PLAN THE LOSING BRANCH FIRST','sv-pillg');
+},
+scenes:[
+ {t:'Two hard words',anim:1300,hold:2000,
+  what:'A big question appears on screen, and only two buttons are offered: YES and NO. The cursor hovers between them, unable to settle.',
+  why:'We are taught to answer in certainties. But a hard yes or no hides the question that actually matters: how often does this kind of thing work?'},
+ {t:'Reality deals repeats',anim:2400,hold:2100,
+  what:'Ten past launches with identical preparation file past, one by one. Seven land well; three break — same prep, different days.',
+  why:'Identical causes do not force identical outcomes, because noise is part of the machine. One roll never proves the dice — you need the whole handful.'},
+ {t:'Speak in odds',anim:1800,hold:2100,
+  what:'The two buttons dissolve into a gauge. The needle sweeps off “NO” and settles near 70%. The answer becomes a dial: about 7 in 10.',
+  why:'An odds statement keeps the texture of reality and stays checkable. When new facts arrive, a dial can move — a certainty can only break.'},
+ {t:'Score the forecast',anim:2200,hold:2100,
+  what:'Two bars grow over 100 similar launches: predicted ≈70, actual 70. They match — the pill stamps the forecaster “calibrated.”',
+  why:'Thinking in odds turns guessing into a scoreable skill. Forecasters who match their claims to reality get sharper; certainty-claimers only get surprised.'},
+ {t:'Base rate first',anim:2600,hold:2200,
+  what:'A warmer question: will the café survive year one? A base-rate bar fills to 4 in 10. A glowing story about the owner’s passion pushes at it — the bar barely moves.',
+  why:'The base rate is what usually happens to cases like this one. Stories are vivid and personal, which is exactly why they must not get the final vote.'},
+ {t:'Plan the losing branch',anim:2400,hold:2300,
+  what:'The decision forks. The upper road needs a perfect day and gets crossed out; the lower road leaves room for the 3-in-10 and gets a check.',
+  why:'Odds thinking changes the plan, not just the mood. Building slack for the losing branch is what separates a forecast from a wish.'}
+],
+apply(S,i,p){const P=k=>SP(i,p,k),s0=P(0),s1=P(1),s2=P(2),s3=P(3),s4=P(4),s5=P(5),R=S.refs;
+  op(R.q1, s0*(1-s1));
+  op(R.yes, s0*(1-s1)); op(R.no, s0*(1-s1));
+  op(R.tens, s1*(1-s2)); op(R.tally, clamp((s1-.8)/.2,0,1)*(1-s2));
+  R.tiles.forEach((t,k)=>{const ph=clamp((s1-.05)*13-k,0,1); op(t.ok,t.good?ph:0); op(t.bd,t.good?0:ph)});
+  op(R.gauge, s2*(1-s3)); op(R.odds,s2*(1-s3));
+  const val=.7*clamp(s2*1.8,0,1);
+  R.needle.setAttribute('transform','rotate('+(180*val)+' 380 318)');
+  R.val.textContent=Math.round(val*100)+'%';
+  op(R.bars, s3*(1-s4));
+  const pb=clamp(s3*2,0,1), ab=clamp(s3*2-1,0,1);
+  R.bp.setAttribute('height',String(140*pb)); R.bp.setAttribute('y',String(380-140*pb));
+  R.ba.setAttribute('height',String(140*ab)); R.ba.setAttribute('y',String(380-140*ab));
+  op(R.vp,pb); op(R.va,ab);
+  op(R.cal,clamp((s3-.88)/.12,0,1)*(1-s4));
+  op(R.cafe, s4*(1-s5)); op(R.hold, clamp((s4-.82)/.18,0,1)*(1-s5));
+  R.bfill.setAttribute('width',String(208*clamp(s4*2,0,1)));
+  op(R.blabel,clamp(s4*2,0,1));
+  setT(R.story, lerp(250,0,easeIO(clamp(s4*2.5-1,0,1))), 0); op(R.story,clamp(s4*2.5-1,0,1)*(1-s5));
+  op(R.fork, s5);
+  drawOn(R.p1,clamp(s5*2.4,0,1)); drawOn(R.p2,clamp(s5*2.4-.5,0,1));
+  op(R.tp,clamp(s5*2.4-.6,0,1)); op(R.bp2,clamp(s5*2.4-1,0,1));
+  op(R.xx,clamp(s5*3-2.2,0,1)); op(R.ck,clamp(s5*3-2.5,0,1));
+  op(R.fin,clamp((s5-.85)/.15,0,1));
+}},
+});
+
+/* ---------------- 31 · SYSTEMS THINKING ---------------- */
+TOPICS.push({
+n:31,id:'syst',part:4,title:'Systems Thinking',
+one:'A mess is rarely one bad part — it is parts wired together. Read the loops under the events, then push on the wiring, not the people.',
+what:[
+ 'A customer complains, and the reflex is to fix the complaint: apologise, refund, move on. Then it returns tomorrow, and again next week. The event keeps regenerating because the machine that produces it was never touched.',
+ '<b>Systems thinking</b> looks one level under events — at the parts, the links between them, and the loops they form. Change a link: how work flows, what gets measured, who answers to whom. Change the wiring, and the events tend to change on their own.'
+],
+why:[
+ '<b>Events are outputs.</b> A delay, a spike, a complaint — each is the system doing what its structure asks of it. Blaming the output leaves the structure free to print another one.',
+ '<b>Loops run the show.</b> Reinforcing loops snowball, for better or worse. Balancing loops push back toward a target. Find which loop is currently winning and you have found your suspect.',
+ '<b>Delays hide the culprit.</b> Cause and effect often sit far apart in time, so the eye lands on whatever is nearest — usually a person, rarely the wiring.'
+],
+life:[
+ '<b>The speeding fines.</b> A town raises fines; speeding dips for a month, then returns. The commute pressure that produces speeding was never touched.',
+ '<b>The support queue.</b> Hiring clears tickets for a week — then the confusing signup page prints more, faster than any team can answer them.',
+ '<b>The yo-yo budget.</b> Cost cuts dent quality, quality scares customers, the scare forces emergency spend. The loop was the plan all along.'
+],
+use:[
+ '<b>When an event repeats, draw the loop.</b> Sketch the parts and arrows that keep producing it — five boxes are usually enough to see it.',
+ '<b>Name the loops.</b> Which arrow snowballs (R), which pushes back (B)? The loop that is currently winning is where the leverage lives.',
+ '<b>Push on links, not people.</b> Ask “what structure makes this behaviour sensible?” before “who slipped?” People adapt to wiring; wiring rarely adapts to lectures.',
+ '<b>Give the loop time.</b> Structures answer slowly. After a change, wait for the new habit to show before you judge the fix.'
+],
+take:[
+ 'Fix the same event twice? The system is talking to you.',
+ 'Reinforcing loops snowball; balancing loops defend a target.',
+ 'Change the wiring, and the behaviour usually follows.'
+],
+ask:'Is this a one-off slip — or a structure doing what it was built to do?',
+demo:{
+vb:[760,430],
+build(S){const g=S.svg,R=S.refs;
+  R.counter=E('g',{opacity:0},g);
+  E('rect',{class:'sv-nd',x:280,y:296,width:200,height:20,rx:4},R.counter);
+  E('rect',{class:'sv-nd',x:292,y:262,width:56,height:34,rx:4},R.counter);
+  T('TILL',{class:'sv-l','text-anchor':'middle',x:320,y:283},R.counter);
+  E('circle',{class:'sv-dot',cx:392,cy:282,r:6},R.counter);
+  E('circle',{class:'sv-dotr',cx:446,cy:282,r:6},R.counter);
+  T('STAFF',{class:'sv-l',x:362,y:312},R.counter); T('GUEST',{class:'sv-l',x:424,y:312},R.counter);
+  R.cpl=pill(g,390,210,'“SLOW AGAIN!”','sv-pillr');
+  R.ev=T('THE SAME EVENT, AGAIN AND AGAIN',{class:'sv-l2','text-anchor':'middle',x:390,y:388},g);
+  R.chart=E('g',{opacity:0},g);
+  E('path',{class:'sv-ink',d:'M80,330 H320'},R.chart); E('path',{class:'sv-ink',d:'M80,330 V120'},R.chart);
+  tri(320,330,90,R.chart,'sv-fi'); tri(80,120,0,R.chart,'sv-fi');
+  T('COMPLAINTS / WEEK',{class:'sv-l','text-anchor':'middle',x:200,y:352},R.chart);
+  R.cl=E('path',{class:'sv-r',d:'M92,316 C130,308 160,296 196,278 C232,258 264,240 306,206'},R.chart);
+  R.cp=pill(g,200,96,'IT KEEPS COMING BACK','sv-pillr');
+  R.loop=E('g',{opacity:0},g);
+  const L=['FEWER STAFF','SLOWER SERVICE','BAD REVIEWS','FEWER CUSTOMERS','LESS REVENUE'];
+  R.nds=[]; const pts=[];
+  for(let k=0;k<5;k++){const a=(-90+72*k)*Math.PI/180; pts.push([390+124*Math.cos(a),246+124*Math.sin(a)])}
+  R.pts=pts;
+  R.arr=[];
+  for(let k=0;k<5;k++){const a=pts[k],b2=pts[(k+1)%5];
+    const ln=E('path',{class:'sv-ink',d:'M'+a[0]+','+a[1]+' L'+b2[0]+','+b2[1]},R.loop);
+    const dx=b2[0]-a[0],dy=b2[1]-a[1],an=Math.atan2(dy,dx)*180/Math.PI;
+    tri(lerp(a[0],b2[0],.78),lerp(a[1],b2[1],.78),an,R.loop,'sv-fi');
+    R.arr.push(ln);
+  }
+  R.nds=[]; pts.forEach((p2,k)=>{const n=E('g',{},R.loop);
+    E('rect',{class:'sv-nd',x:p2[0]-62,y:p2[1]-17,width:124,height:34,rx:7},n);
+    T(L[k],{class:'sv-tb','text-anchor':'middle',x:p2[0],y:p2[1]+4},n);
+    R.nds.push(n)});
+  R.badge=pill(g,390,246,'R · SNOWBALLING DOWN','sv-pillr');
+  R.help=pill(g,614,116,'TRAINING WEEK · QUALITY CHECK','sv-pilla');
+  R.tl=E('path',{class:'sv-tl',d:'M560,136 C540,158 524,178 510,200'},R.loop);
+  tri(510,200,235,R.loop,'sv-fi');
+  R.bC=E('g',{},R.loop);
+  E('circle',{class:'sv-ndt',cx:662,cy:172,r:14},R.bC);
+  T('B',{class:'sv-tb','text-anchor':'middle',x:662,y:177},R.bC);
+  T('BALANCING',{class:'sv-l','text-anchor':'middle',x:662,y:200},R.bC);
+  R.after=E('g',{opacity:0},g);
+  E('path',{class:'sv-ink',d:'M60,170 H280'},R.after);
+  T('COMPLAINTS, AFTER',{class:'sv-l',x:60,y:196},R.after);
+  R.af=E('path',{class:'sv-g',d:'M72,96 C110,102 150,118 190,142 C220,158 250,162 276,162'},R.after);
+  R.garr=[];
+  for(let k=0;k<5;k++){const a=pts[k],b2=pts[(k+1)%5];
+    R.garr.push(E('path',{class:'sv-g',d:'M'+a[0]+','+a[1]+' L'+b2[0]+','+b2[1]},R.loop))}
+  R.fizz=pill(g,390,60,'“SLOW—”','sv-pill');
+  R.fin=pill(g,390,392,'THE EVENT STOPS REGENERATING','sv-pillg');
+},
+scenes:[
+ {t:'The event',anim:1800,hold:2100,
+  what:'A guest at the till says it: “slow again!” The team apologises, the day moves on — and the same bubble pops up twice more.',
+  why:'A single event feels like a one-off, so a one-off response feels right. Nothing here asks the only useful question: what keeps printing this?'},
+ {t:'The pattern',anim:2000,hold:2000,
+  what:'Zoom out to eight weeks and the complaints are not random stumbles — they climb a steady red staircase.',
+  why:'One event is noise; a trend is information. When something repeats on schedule, the cause is usually structural, not personal.'},
+ {t:'The structure',anim:2600,hold:2100,
+  what:'The chart fades and the machinery underneath draws itself: five boxes chasing each other in a circle — staff, service, reviews, customers, revenue.',
+  why:'Under every repeating pattern sits a loop of parts and links. The arrows are the system: each box pushes the next, and the last one pushes back on the first.'},
+ {t:'The winning loop',anim:2200,hold:2000,
+  what:'The arrows light up in turn, chasing each other around the ring. The badge in the middle names it: R — a reinforcing spiral, running downward.',
+  why:'A loop with an even number of “pushes” amplifies whatever it is given. This one amplifies decline: less staff, slower service, fewer customers, less revenue — round it goes.'},
+ {t:'Push on a link',anim:2400,hold:2100,
+  what:'A new element enters: a training week plus a quality check, feeding into service. Its badge says B — a balancing loop. On the side, the complaint curve bends flat and down.',
+  why:'You rarely fight a reinforcing loop head-on; you install a balancing one that pushes back. One changed link — training between service and reviews — re-aims the whole ring.'},
+ {t:'The new habit',anim:2200,hold:2300,
+  what:'The ring’s arrows turn green one by one, the old bubble tries to rise and fizzles out mid-air.',
+  why:'With the wiring changed, the events lose their generator. Systems thinking is patience at the right spot: push the structure once, then let the loop do the daily work.'}
+],
+apply(S,i,p){const P=k=>SP(i,p,k),s0=P(0),s1=P(1),s2=P(2),s3=P(3),s4=P(4),s5=P(5),R=S.refs;
+  op(R.counter, s0*(1-s1));
+  const w1=clamp(s0*5-1,0,1)-clamp(s0*5-2,0,1), w2=clamp(s0*5-3,0,1)-clamp(s0*5-4,0,1);
+  op(R.cpl, Math.max(w1,w2)*(1-s1));
+  op(R.ev, clamp((s0-.75)/.25,0,1)*(1-s1));
+  op(R.chart, s1*(1-s2)); op(R.cp, clamp((s1-.8)/.2,0,1)*(1-s2));
+  drawOn(R.cl, clamp(s1*1.7,0,1));
+  op(R.loop, s2);
+  R.nds.forEach((n,k)=>op(n, clamp(s2*8-k,0,1)));
+  R.arr.forEach((a,k)=>drawOn(a, clamp(s2*8-2-k,0,1)));
+  op(R.badge, clamp((s2-.82)/.18,0,1));
+  const ch=clamp(s3*5,0,5);
+  R.arr.forEach((a,k)=>{const ph=clamp(ch-k,0,1); op(a, .45+.55*Math.sin(ph*Math.PI))});
+  op(R.badge, Math.max(clamp((s2-.82)/.18,0,1)*(1-s5*.5), clamp(s3,0,1)*.9*(1-s5*.5)));
+  op(R.help, s4*(1-s5*.4)); op(R.bC, clamp((s4-.3)/.3,0,1)*(1-s5*.4));
+  drawOn(R.tl, clamp((s4-.15)/.5,0,1));
+  op(R.after, clamp((s4-.55)/.3,0,1)*(1-s5*.6));
+  drawOn(R.af, clamp((s4-.7)/.3,0,1));
+  R.garr.forEach((a,k)=>drawOn(a, clamp(s5*7-k,0,1)));
+  const fz=clamp(s5*3-1,0,1)-clamp(s5*3-2.2,0,1);
+  op(R.fizz, Math.max(fz,0)); setT(R.fizz,0,-10*Math.max(fz,0));
+  op(R.fin, clamp((s5-.85)/.15,0,1));
+}},
+});
+
+/* ---------------- 32 · HANLON'S RAZOR ---------------- */
+TOPICS.push({
+n:32,id:'hanl',part:4,title:'Hanlon’s Razor',
+one:'Before reading malice into a message, check the boring suspects — overload, accident, oversight. Most bad days are not plots.',
+what:[
+ 'A friend leaves your message on read for three days. A colleague presents your idea in a meeting you missed. The mind writes a gripping story: they did it on purpose. The story feels true because it explains the sting so neatly.',
+ '<b>Hanlon’s Razor</b> is a nudge for exactly that moment: check the dull explanations first. The stuffed inbox, the sick kid, the launch week. Not because people are saints — but because carelessness and overload are usually far more common than plots.'
+],
+why:[
+ '<b>Malice is a rare suspect.</b> Most people are busy starring in their own movie. The hurtful acts we receive are mostly side effects of their chaos, not aim.',
+ '<b>The dark story is expensive.</b> It spikes anger, sharpens your reply, and can manufacture the very enemy you feared. The boring story usually costs one polite nudge — nothing more.',
+ '<b>A default, not a blindfold.</b> The razor says try the cheap explanations first; it does not say ignore real harm. When a pattern survives evidence, act on it.'
+],
+life:[
+ '<b>The silent client.</b> Two days of silence felt like rejection; the real cause was launch week. One light follow-up reopened everything.',
+ '<b>The curt review.</b> A blunt code review reads as contempt; the reviewer was typing on a phone, on a train, at 11 pm.',
+ '<b>The cut-off driver.</b> The swerve was almost certainly a lost tourist, not an insult — chasing it converts a five-second mistake into a dangerous feud.'
+],
+use:[
+ '<b>Feel the plot forming? Name three boring causes.</b> Overload, oversight, accident — say them out loud before the dark story gets a budget.',
+ '<b>Run a cheap probe.</b> A friendly “bumping this up!” tests every theory at the cost of one message.',
+ '<b>Escalate on evidence.</b> If the pattern repeats after clear communication, treat it as real. The razor protects your energy; it does not erase your boundaries.'
+],
+take:[
+ 'The dull explanation usually wins — and it costs least.',
+ 'Malice is heavy; carry it only with evidence.',
+ 'A kind default spares you the enemies you almost made yourself.'
+],
+ask:'Am I reading a plan into what could be a messy Tuesday?',
+demo:{
+vb:[760,430],
+build(S){const g=S.svg,R=S.refs;
+  R.env=E('g',{opacity:0},g);
+  E('rect',{class:'sv-nd',x:300,y:66,width:160,height:100,rx:6},R.env);
+  E('path',{class:'sv-inkt',d:'M300,66 L380,130 L460,66'},R.env);
+  T('TO: MAYA',{class:'sv-l','text-anchor':'middle',x:380,y:150},R.env);
+  R.d1=T('D+1',{class:'sv-l2',x:520,y:104},R.env);
+  R.d2=T('D+2',{class:'sv-l2',x:568,y:104},R.env);
+  R.d3=T('D+3',{class:'sv-l2',x:616,y:104},R.env);
+  R.dark=pill(g,380,252,'“THEY’RE ICING ME OUT”','sv-pillr');
+  R.axT=E('g',{opacity:0},g);
+  E('rect',{class:'sv-nd',x:66,y:130,width:26,height:170,rx:5},R.axT);
+  R.axF=E('rect',{class:'sv-frs',x:66,y:300,width:26,height:0,rx:5},R.axT);
+  T('ANXIETY',{class:'sv-tr','text-anchor':'middle',x:79,y:322},R.axT);
+  R.trT=E('g',{opacity:0},g);
+  E('rect',{class:'sv-nd',x:668,y:130,width:26,height:170,rx:5},R.trT);
+  R.trF=E('rect',{class:'sv-fgs',x:668,y:130,width:26,height:170,rx:5},R.trT);
+  T('TRUST',{class:'sv-gr','text-anchor':'middle',x:681,y:322},R.trT);
+  R.draft=E('g',{opacity:0},g);
+  E('rect',{class:'sv-nd',x:452,y:150,width:170,height:104,rx:6},R.draft);
+  T('DRAFT REPLY',{class:'sv-l',x:466,y:172},R.draft);
+  E('path',{class:'sv-inkt',d:'M466,192 h130 M466,210 h110 M466,228 h120'},R.draft);
+  R.z1=E('path',{class:'sv-r',d:'M466,196 l10,-5 l10,5 l10,-5 l10,5 l10,-5 l10,5 l10,-5 l10,5 l10,-5 l10,5 l10,-5 l10,5'},R.draft);
+  R.z2=E('path',{class:'sv-r',d:'M466,214 l10,-5 l10,5 l10,-5 l10,5 l10,-5 l10,5 l10,-5 l10,5 l10,-5 l10,5 l10,-5'},R.draft);
+  R.deeper=pill(g,380,392,'THE STORY GETS DARKER','sv-pillr');
+  R.chips=[];
+  const ct=[['INBOX AT 200+',210,120],['SICK KID AT HOME',430,102],['DRAFT SAVED, NEVER SENT',230,330],['FLAGGED AS NOISE',470,318]];
+  R.chips=ct.map(c=>{const p2=pill(g,c[1],c[2],c[0],'sv-pilla'); return p2});
+  R.probe=pill(g,140,252,'“BUMPING THIS UP — NO RUSH”','sv-pill');
+  R.reply=pill(g,520,252,'“SO SORRY — LAUNCH WEEK. ON IT.”','sv-pillg');
+  R.scale=E('g',{opacity:0},g);
+  R.beam=E('path',{class:'sv-ink',d:'M230,150 H530'},R.scale);
+  E('path',{class:'sv-fi',d:'M380,150 l-7,14 h14 Z'},R.scale);
+  R.sL=E('path',{class:'sv-inkt',d:'M230,150 V196'},R.scale);
+  R.pL=E('path',{class:'sv-inkt',d:'M204,196 Q230,214 256,196'},R.scale);
+  R.st1=E('ellipse',{class:'sv-ndr',cx:230,cy:190,rx:14,ry:8},R.scale);
+  R.sR=E('path',{class:'sv-inkt',d:'M530,150 V196'},R.scale);
+  R.pR=E('path',{class:'sv-inkt',d:'M504,196 Q530,214 556,196'},R.scale);
+  R.st2=E('ellipse',{class:'sv-ndg',cx:530,cy:186,rx:13,ry:7},R.scale);
+  R.st3=E('ellipse',{class:'sv-ndg',cx:530,cy:174,rx:13,ry:7},R.scale);
+  R.st4=E('ellipse',{class:'sv-ndg',cx:530,cy:162,rx:13,ry:7},R.scale);
+  T('MALICE · RARE',{class:'sv-tr','text-anchor':'middle',x:230,y:240},R.scale);
+  T('OVERLOAD · ACCIDENT · OVERSIGHT',{class:'sv-gr','text-anchor':'middle',x:530,y:240},R.scale);
+  T('USUALLY THE LIGHTER, TRUER SIDE',{class:'sv-l2','text-anchor':'middle',x:380,y:286},R.scale);
+  R.fin=pill(g,380,392,'DEFAULT TO THE BORING · VERIFY WITH EVIDENCE','sv-pill');
+},
+scenes:[
+ {t:'The silence',anim:2000,hold:2100,
+  what:'An email goes out. Day one, two, three tick past with no reply — and a red bubble grows over the inbox: “they’re icing me out.”',
+  why:'Silence is ambiguous, and the mind hates ambiguity. With no facts available, it fills the gap with the most dramatic story it owns.'},
+ {t:'The plot thickens',anim:2200,hold:2100,
+  what:'Choosing the dark story has a cost curve: the anxiety bar fills, the trust bar drains, and the draft reply grows jagged red edges.',
+  why:'Malice is not just a guess — it is a posture. It tightens your tone and pre-loads the next conversation for a fight that may exist only here.'},
+ {t:'The boring suspects',anim:1800,hold:2100,
+  what:'Four amber chips slide in and take the stage: an inbox at 200+, a sick kid, a draft that was never sent, a message flagged as noise.',
+  why:'These explanations are dull, which is why the brain skips them. But dullness correlates with frequency — and frequency is what a good default should track.'},
+ {t:'The cheap probe',anim:2600,hold:2200,
+  what:'One light message drifts across: “bumping this up — no rush.” Minutes later the reply lands: “so sorry — launch week. On it.” The red bubble pops; the meters recover.',
+  why:'A two-line probe tested every theory for the price of a stamp. The dark story needed a villain; the facts needed ten seconds.'},
+ {t:'The razor as default',anim:2400,hold:2300,
+  what:'A scale settles into view. One heavy stone labelled “malice” sits high; a stack of light stones — overload, accident, oversight — sits low. The low side wins by weight of numbers.',
+  why:'Default to the explanation that is common and cheap to test. Keep malice on the shelf until a pattern of evidence, not a feeling, hands it to you.'}
+],
+apply(S,i,p){const P=k=>SP(i,p,k),s0=P(0),s1=P(1),s2=P(2),s3=P(3),s4=P(4),R=S.refs;
+  op(R.env, s0*(1-s1));
+  op(R.d1,clamp(s0*6-3,0,1)); op(R.d2,clamp(s0*6-4,0,1)); op(R.d3,clamp(s0*6-5,0,1));
+  const darkOn=clamp((s0-.7)/.3,0,1)*(1-clamp((s2-.05)/.35,0,1));
+  op(R.dark, darkOn);
+  op(R.axT, Math.max(s1*(1-s2*.85), clamp((s3-1.6),0,1)*0)); op(R.trT, Math.max(s1*(1-s2*.85), 0));
+  const anx=Math.max(clamp(s1*1.4,0,1)*(1-clamp((s3-.55)/.35,0,1)), 0);
+  R.axF.setAttribute('y',String(300-170*anx)); R.axF.setAttribute('height',String(170*anx));
+  const rec=clamp((s3-.55)/.35,0,1);
+  const tru=1-.72*clamp(s1*1.4,0,1)*(1-rec);
+  R.trF.setAttribute('y',String(300-170*tru)); R.trF.setAttribute('height',String(170*tru));
+  op(R.axT, Math.max(s1,rec*.9)*(1-s4)); op(R.trT, Math.max(s1,rec*.9)*(1-s4));
+  op(R.draft, s1*(1-s2)); op(R.deeper, clamp((s1-.75)/.25,0,1)*(1-s2));
+  drawOn(R.z1, clamp(s1*3-1.2,0,1)); drawOn(R.z2, clamp(s1*3-1.7,0,1));
+  R.chips.forEach((c,k)=>{const sg=clamp(s2*6-k,0,1); op(c,sg*(1-s3)); setT(c,0,lerp(26,0,easeIO(sg)))});
+  const mv=easeIO(clamp(s3*1.4,0,1));
+  setT(R.probe, lerp(0,210,mv), 0); op(R.probe, clamp(s3*3,0,1)*(1-clamp((s3-.38)/.12,0,1)));
+  op(R.reply, clamp((s3-.5)/.2,0,1)*(1-s4));
+  op(R.scale, s4);
+  const a=lerp(0,7,easeIO(clamp((s4-.2)/.6,0,1)))*Math.PI/180;
+  R.beam.setAttribute('transform','rotate('+(a*180/Math.PI)+' 380 150)');
+  const c=Math.cos(a),s2n=Math.sin(a);
+  const lx=380-150*c, ly=150-150*s2n, rx2=380+150*c, ry2=150+150*s2n;
+  R.sL.setAttribute('d','M'+lx+','+ly+' V'+(ly+46)); R.pL.setAttribute('d','M'+(lx-26)+','+(ly+46)+' Q'+lx+','+(ly+64)+' '+(lx+26)+','+(ly+46));
+  R.sR.setAttribute('d','M'+rx2+','+ry2+' V'+(ry2+46)); R.pR.setAttribute('d','M'+(rx2-26)+','+(ry2+46)+' Q'+rx2+','+(ry2+64)+' '+(rx2+26)+','+(ry2+46));
+  setT(R.st1, lx-230, ly-150); setT(R.st2, rx2-530, ry2-150); setT(R.st3, rx2-530, ry2-150); setT(R.st4, rx2-530, ry2-150);
+  op(R.fin, clamp((s4-.82)/.18,0,1));
+}},
+});
+
+/* ---------------- 33 · CHESTERTON'S FENCE ---------------- */
+TOPICS.push({
+n:33,id:'fest',part:4,title:'Chesterton’s Fence',
+one:'Meet a rule you don’t understand? Leave it standing until you know the failure it was built to prevent. Reform after understanding.',
+what:[
+ 'A path crosses a field, and a plain fence sits across it, blocking the obvious shortcut. To a newcomer it looks like pure waste — tear it down. But the fence was raised by people who knew something the newcomer does not.',
+ '<b>Chesterton’s Fence</b> is the rule for that moment: don’t clear a fence away until you can say why it was put there. In modern clothes — don’t delete the weird step, the slow approval, the “useless” checklist item until you know the accident it is quietly preventing.'
+],
+why:[
+ '<b>Fences are compressed history.</b> Rules, rituals and checklists are often the fossil of a real accident. The story faded; the protection stayed on.',
+ '<b>A working guard looks like paranoia.</b> While the fence works, nothing bad happens — which feels like proof it does nothing. The proof arrives on its own schedule, usually after removal.',
+ '<b>Understanding upgrades; ignorance deletes.</b> Know the reason, and you can replace the fence with something better — a gate, an automated check. Without the reason, demolition is the only move you own.'
+],
+life:[
+ '<b>The dropped approval.</b> A team deletes a “slow” two-signature rule and rediscovers the billing error that once cost a client. The signatures were the fence.',
+ '<b>The recipe step.</b> “Why rest the dough overnight?” Skipping it works twice, fails the third time. The step was chemistry, not superstition.',
+ '<b>The legacy code block.</b> Nobody can say what that function does; deleting it breaks a tax edge case from years ago. The “do not remove” comment was a fence.'
+],
+use:[
+ '<b>Ask the fence question out loud.</b> “What failure was this rule built to prevent?” Ask the oldest hand in the room; dig out the ticket from three years ago.',
+ '<b>If no one knows, probe gently.</b> Change it in a small, reversible way and watch. Some fences guard real cliffs; some really are leftovers — the probe tells you which.',
+ '<b>Replace, don’t just remove.</b> Outgrown the form but need the function? Build the better guardrail first, then retire the old fence with respect.'
+],
+take:[
+ 'A rule you can’t explain may be guarding a scar you can’t see.',
+ 'Guards that work look like paranoia — until the day they don’t.',
+ 'Understand first, then reform: keep the reason, upgrade the form.'
+],
+ask:'Do I know why this rule exists — or only that it annoys me?',
+demo:{
+vb:[760,430],
+build(S){const g=S.svg,R=S.refs;
+  E('path',{class:'sv-ink',d:'M40,352 H720'},g);
+  for(let x=64;x<720;x+=34){ if(x<280||x>450) E('path',{class:'sv-inkt',d:'M'+x+',352 v-9'},g) }
+  E('path',{class:'sv-dash sv-inkt',d:'M60,334 C220,324 340,330 700,336'},g);
+  E('path',{class:'sv-ink',d:'M560,352 V296'},g);
+  E('path',{class:'sv-ink',d:'M560,392 H720 M560,352 V392'},g);
+  for(let k=0;k<6;k++) E('path',{class:'sv-inkt',d:'M'+(584+k*22)+',386 L'+(598+k*22)+',394'},g);
+  T('THE QUARRY',{class:'sv-tr',x:608,y:414},g);
+  R.fence=E('g',{},g);
+  for(let x=300;x<=420;x+=30) E('rect',{class:'sv-nd',x:x-3,y:300,width:6,height:52,rx:2},R.fence);
+  E('path',{class:'sv-ink',d:'M288,308 H432'},R.fence);
+  E('path',{class:'sv-ink',d:'M288,326 H432'},R.fence);
+  R.walk=E('g',{opacity:0},g);
+  E('circle',{class:'sv-dot',cx:0,cy:-30,r:5.5},R.walk);
+  E('path',{class:'sv-ink',d:'M0,-24 V2 M0,2 L-8,18 M0,2 L8,18'},R.walk);
+  R.bub=pill(g,300,238,'“POINTLESS — CUT THROUGH”','sv-pillr');
+  R.saw=E('g',{opacity:0},g);
+  E('path',{class:'sv-r',d:'M-24,0 l8,7 l8,-7 l8,7 l8,-7 l8,7 l8,-7'},R.saw);
+  E('rect',{class:'sv-nda',x:-30,y:-6,width:12,height:16,rx:3},R.saw);
+  R.days=T('DAYS 1–5 · SHORTER WALK, NO PROBLEM',{class:'sv-l2','text-anchor':'middle',x:380,y:238},g);
+  R.goat=E('g',{opacity:0},g);
+  E('ellipse',{class:'sv-nd',cx:0,cy:-16,rx:16,ry:10},R.goat);
+  E('circle',{class:'sv-nd',cx:18,cy:-24,r:7},R.goat);
+  E('path',{class:'sv-inkt',d:'M-10,-7 V6 M-4,-7 V6 M6,-7 V6 M12,-7 V6'},R.goat);
+  E('path',{class:'sv-inkt',d:'M22,-30 l6,-6'},R.goat);
+  R.back=pill(g,380,80,'THE OLD ACCIDENT RETURNS','sv-pillr');
+  R.plq=E('g',{opacity:0},g);
+  E('rect',{class:'sv-nda',x:236,y:236,width:230,height:64,rx:6},R.plq);
+  T('BUILT 1954',{class:'sv-tb',x:252,y:258},R.plq);
+  T('KEEPS LIVESTOCK FROM',{class:'sv-l',x:252,y:276},R.plq);
+  T('THE QUARRY EDGE',{class:'sv-l',x:252,y:292},R.plq);
+  R.mem=pill(g,380,120,'A FENCE IS A MEMORY OF A FALL','sv-pill');
+  R.gfence=E('g',{opacity:0},g);
+  for(let x=300;x<=420;x+=30) E('rect',{class:'sv-ndg',x:x-3,y:300,width:6,height:52,rx:2},R.gfence);
+  R.gr1=E('path',{class:'sv-g',d:'M288,308 H432'},R.gfence);
+  R.gr2=E('path',{class:'sv-g',d:'M288,326 H432'},R.gfence);
+  E('rect',{class:'sv-ndg',x:354,y:296,width:5,height:56,rx:2},R.gfence);
+  E('rect',{class:'sv-ndg',x:401,y:296,width:5,height:56,rx:2},R.gfence);
+  R.gate=E('path',{class:'sv-dash sv-gt',d:'M357,298 Q380,240 403,298'},R.gfence);
+  T('NEW: GATE',{class:'sv-gr',x:380,y:236},R.gfence);
+  R.fin=pill(g,380,180,'KEEP THE REASON · UPGRADE THE FORM','sv-pillg');
+},
+scenes:[
+ {t:'The nuisance',anim:2200,hold:2100,
+  what:'A walker takes the field path, hits the fence, and stops. A red thought bubble rises: “pointless — cut through.” A saw appears.',
+  why:'To the newcomer, the fence costs time and explains nothing. The visible cost is right there; the invisible purpose is nowhere in sight.'},
+ {t:'The removal',anim:2000,hold:2000,
+  what:'The saw works, the rails drop, the way opens. For five days the shortcut works perfectly and nobody misses the fence.',
+  why:'This is the dangerous part: a guard that did its job leaves no memories. Success after removal feels like vindication, and it is only silence.'},
+ {t:'The return',anim:2600,hold:2200,
+  what:'A goat wanders along the same shortcut, reaches the far corner — and walks straight over the quarry edge.',
+  why:'The fence was never about the path; it was about the edge. The failure it prevented had simply been waiting, patient and unchanged.'},
+ {t:'The hidden reason',anim:2200,hold:2100,
+  what:'A plaque fades in where the fence stood: built 1954, keeps livestock from the quarry. The fence was a memory of a fall, written in wood.',
+  why:'Rules are often knowledge that outlived its explainers. The reason did not vanish because it stopped being true — it vanished because nobody asked.'},
+ {t:'The informed reform',anim:2400,hold:2300,
+  what:'The fence is rebuilt in green — and this time with a gate. The walker opens it and passes through. The reason stayed; the form got better.',
+  why:'Once you know what a fence is for, you can serve the same purpose with less friction. That is real reform: keeping the function, improving the design.'}
+],
+apply(S,i,p){const P=k=>SP(i,p,k),s0=P(0),s1=P(1),s2=P(2),s3=P(3),s4=P(4),s5=P(5),R=S.refs;
+  const wk=clamp(s0*3,0,1)*(1-clamp((s4-.7)/.3,0,1));
+  op(R.walk, wk);
+  const wx0=lerp(80,262,easeIO(clamp(s0*2.2,0,1)));
+  const wx1=lerp(262,520,easeIO(clamp(s2*2,0,1)));
+  setT(R.walk, Math.max(wx0,wx1), 334);
+  op(R.bub, clamp((s0-.55)/.3,0,1)*(1-clamp((s1-.15)/.25,0,1)));
+  const sw=clamp(s1*2.4,0,1);
+  op(R.saw, sw*(1-clamp((s1-.55)/.3,0,1)));
+  setT(R.saw, 336+Math.sin(s1*46)*3.2*(sw<1?1:0), 288);
+  op(R.fence, 1-clamp((s1-.5)/.45,0,1));
+  op(R.days, clamp((s1-.75)/.25,0,1)*(1-clamp((s2-.9)/.1,0,1)));
+  op(R.goat, s2);
+  const gx=lerp(420,552,easeIO(clamp(s2*1.8,0,1)));
+  const fall=clamp(s2*1.8-1,0,1);
+  R.goat.setAttribute('transform','translate('+(gx+14*fall)+','+(338+44*fall)+') rotate('+(80*fall)+')');
+  op(R.back, clamp((s2-.75)/.25,0,1)*(1-clamp((s3-.2)/.2,0,1)));
+  op(R.plq, clamp((s3-.25)/.35,0,1)*(1-s4));
+  op(R.mem, clamp((s3-.75)/.25,0,1)*(1-s4));
+  op(R.gfence, s4);
+  drawOn(R.gr1, clamp(s4*2.4,0,1)); drawOn(R.gr2, clamp(s4*2.4-.6,0,1));
+  op(R.fin, clamp((s4-.85)/.15,0,1));
+  setT(R.gate||R.gfence,0,0);
+}},
+});
+/* ================================================================
+   PART V · THE SAGE’S COMPASS · topics 34–36
+================================================================ */
+/* ---------------- 34 · MAP IS NOT THE TERRITORY ---------------- */
+TOPICS.push({
+n:34,id:'mapt',part:4,title:'The Map Is Not the Territory',
+one:'Every map — plan, model, belief — leaves things out on purpose. Trust it for direction, then check it against the ground.',
+what:[
+ 'A city map is clean: straight streets, tidy labels, one obvious route. The city itself is mud, roadworks, a bridge closed on Tuesdays, a hill the scale never showed. The map is not lying — it is summarising, and every summary drops things to stay usable.',
+ '<b>“The map is not the territory”</b> — Alfred Korzybski’s phrase — applies far beyond paper: plans, spreadsheets, stereotypes and mental models are all maps. Useful, compressed, and always thinner than the real thing. Trouble starts when we forget which one we are holding.'
+],
+why:[
+ '<b>Compression is the job.</b> A map with everything on it would be the size of the city. So maps select — and what they keep depends on what they are for.',
+ '<b>Errors live in the gaps.</b> Plans rarely fail on the streets that were drawn; they fail on the ones that were not — the closure, the mood, the market shift the model never saw.',
+ '<b>Territory changes; maps age.</b> Reality edits itself daily. Last year’s accurate map can quietly become fiction — which is why careful walkers, and careful thinkers, re-check against the ground.'
+],
+life:[
+ '<b>The résumé vs the person.</b> A CV is a map of a human; five minutes of real conversation reveals streets the map never drew.',
+ '<b>The perfect spreadsheet.</b> The model gives the project six months; the territory adds a flu season, a resignation, a supplier delay.',
+ '<b>The stereotype.</b> “Engineers are introverts” navigates nothing. The actual person in front of you is the territory.'
+],
+use:[
+ '<b>Name the map you are holding.</b> “This is my plan,” “this is my impression,” “this is last year’s data.” Naming it keeps it a tool instead of a truth.',
+ '<b>Walk the ground early.</b> Test plans against reality while tests are cheap: a visit, a prototype, a pilot, one honest question asked out loud.',
+ '<b>Carry several maps.</b> One lens for money, one for people, one for time — and when they disagree, trust the ground over any single map.'
+],
+take:[
+ 'All maps leave things out — that is what makes them maps.',
+ 'When map and ground disagree, believe the ground.',
+ 'A good map gets updated; a beloved map gets defended.'
+],
+ask:'Am I reacting to the situation — or to my summary of it?',
+demo:{
+vb:[760,430],
+build(S){const g=S.svg,R=S.refs;
+  R.map=E('g',{},g);
+  E('rect',{class:'sv-fp3',x:150,y:110,width:105,height:86},R.map);
+  E('rect',{class:'sv-fp3',x:360,y:110,width:105,height:86},R.map);
+  E('rect',{class:'sv-fp3',x:255,y:282,width:105,height:70},R.map);
+  E('rect',{x:110,y:180,width:500,height:30,fill:'var(--teal-soft)',opacity:.85},R.map);
+  T('RIVER',{class:'sv-l',x:122,y:200},R.map);
+  for(const x of [150,255,360,465,570]) E('path',{class:'sv-inkt',d:'M'+x+',64 V352'},R.map);
+  for(const y of [110,196,282]) E('path',{class:'sv-inkt',d:'M110,'+y+' H610'},R.map);
+  E('rect',{class:'sv-nd',x:432,y:172,width:16,height:46,rx:3},R.map);
+  E('rect',{class:'sv-nd',x:562,y:172,width:16,height:46,rx:3},R.map);
+  T('BRIDGE',{class:'sv-l','text-anchor':'middle',x:440,y:232},R.map);
+  R.a=E('text',{class:'sv-numg',x:124,y:342},R.map); R.a.textContent='A';
+  R.b=E('text',{class:'sv-num',x:582,y:106},R.map); R.b.textContent='B';
+  R.route=E('path',{class:'sv-g',d:'M150,330 L150,196 L570,196 L570,110'},R.map);
+  R.alt=E('path',{class:'sv-g',d:'M150,330 L150,282 L570,282 L570,110'},R.map);
+  R.you=E('circle',{class:'sv-dot',r:6},R.map);
+  R.yh=E('circle',{class:'sv-halo',r:10},R.map);
+  R.cone=pill(R.map,300,164,'ROADWORKS','sv-pilla');
+  R.xx=E('g',{},R.map);
+  E('path',{class:'sv-r',d:'M426,174 L454,216 M454,174 L426,216'},R.xx);
+  R.closed=pill(R.map,440,262,'BRIDGE CLOSED · TUESDAYS','sv-pillr');
+  R.list=E('g',{opacity:0},g);
+  T('WHAT THE MAP LEFT OUT',{class:'sv-tr',x:600,y:120},R.list);
+  const items=['CONSTRUCTION','TUESDAY CLOSURE','A HILL','FESTIVAL CROWDS'];
+  R.items=[];
+  items.forEach((it,k)=>{const t=T('— '+it,{class:'sv-l2',x:600,y:152+k*30},R.list); R.items.push(t)});
+  R.m1=E('g',{opacity:0},g);
+  E('rect',{class:'sv-nd',x:90,y:296,width:140,height:88,rx:6},R.m1);
+  E('path',{class:'sv-g',d:'M104,356 C150,340 180,330 216,312'},R.m1);
+  E('path',{class:'sv-r',d:'M120,304 C130,330 150,344 196,366'},R.m1);
+  E('circle',{class:'sv-dot',cx:150,cy:338,r:3},R.m1);
+  E('circle',{class:'sv-dotr',cx:196,cy:366,r:3},R.m1);
+  T('METRO MAP',{class:'sv-l','text-anchor':'middle',x:160,y:402},R.m1);
+  R.m2=E('g',{opacity:0},g);
+  E('rect',{class:'sv-nd',x:310,y:296,width:140,height:88,rx:6},R.m2);
+  E('path',{class:'sv-inkt',d:'M324,372 C360,360 380,344 436,312'},R.m2);
+  E('path',{class:'sv-inkt',d:'M324,352 C370,344 390,330 436,322'},R.m2);
+  E('path',{class:'sv-inkt',d:'M324,332 C366,330 400,316 436,330'},R.m2);
+  T('HIKING MAP',{class:'sv-l','text-anchor':'middle',x:380,y:402},R.m2);
+  R.m3=E('g',{opacity:0},g);
+  E('rect',{class:'sv-nd',x:530,y:296,width:140,height:88,rx:6},R.m3);
+  E('path',{class:'sv-inkt',d:'M544,320 H656 M544,350 H656 M580,308 V372 M630,308 V372'},R.m3);
+  E('path',{class:'sv-tl',d:'M544,368 L580,350 L630,356 L656,316'},R.m3);
+  T('COURIER MAP',{class:'sv-l','text-anchor':'middle',x:600,y:402},R.m3);
+  R.says=pill(g,380,40,'THE MAP SAYS: 20 MIN','sv-pill');
+  R.out=pill(g,380,40,'ALL MAPS LEAVE THINGS OUT','sv-pill');
+  R.edit=pill(g,380,40,'EVERY MAP IS AN EDIT','sv-pill');
+  R.v2=pill(g,380,40,'MAP v2 · CHECKED AGAINST THE GROUND','sv-pillg');
+  R.foot=T('FOOTBRIDGE',{class:'sv-l',x:592,y:150},R.map);
+},
+scenes:[
+ {t:'The clean map',anim:2000,hold:2000,
+  what:'A tidy street grid appears with one green route from A to B, crossing the river on a bridge. The map promises the trip takes twenty minutes.',
+  why:'This is how plans feel from inside: smooth, complete, obvious. The smoothness is real — but it is the smoothness of the drawing, not of the ground.'},
+ {t:'Walking the ground',anim:2400,hold:2100,
+  what:'The walker sets off and promptly meets the territory: roadworks at the first corner, then a red X — the bridge is closed on Tuesdays. The dot halts.',
+  why:'The map showed streets and omitted states. Reality’s fine print — closures, weather, moods — only shows up when you are standing in it.'},
+ {t:'What the map left out',anim:2200,hold:2000,
+  what:'A list slides in beside the map: construction, the Tuesday closure, a hill, festival crowds. None of it was drawn — the pill names the pattern.',
+  why:'A map that kept everything would be unusable, so omission is not a defect but a design choice. The skill is remembering what was traded away.'},
+ {t:'Maps by purpose',anim:2200,hold:2000,
+  what:'Three mini-maps appear along the bottom — metro, hiking, courier. Same city, three different omissions. Every map is an edit.',
+  why:'There is no “full” map to switch to — only different edits for different jobs. Better thinkers carry several maps and notice which one is in hand.'},
+ {t:'Update the map',anim:2400,hold:2300,
+  what:'The walker marks the broken bridge on the map itself, and a second route recalculates through the footbridge. The stamp reads: map v2, checked against the ground.',
+  why:'The point is not to distrust maps but to keep them honest. Each walk feeds the map — and a map that gets updated stays worth trusting.'
+ }],
+apply(S,i,p){const P=k=>SP(i,p,k),s0=P(0),s1=P(1),s2=P(2),s3=P(3),s4=P(4),R=S.refs;
+  drawOn(R.route, clamp(s0*1.6,0,1));
+  op(R.says, clamp((s0-.7)/.3,0,1)*(1-clamp((s1-.9)/.1,0,1)));
+  const L=640;
+  const f0=lerp(0,.44,easeIO(clamp(s1*2,0,1)));
+  const pt=ptAt(R.route,f0);
+  setT(R.you,pt.x,pt.y); setT(R.yh,pt.x,pt.y);
+  op(R.you, clamp(s1*2,0,1)); op(R.yh, clamp(s1*2,0,1)*.6);
+  const cc=clamp((s1-.5)/.3,0,1);
+  op(R.cone, cc*(1-s2)); setT(R.cone,0,lerp(14,0,easeIO(cc)));
+  op(R.xx, clamp((s1-.65)/.3,0,1)*(1-s4*.5)); op(R.closed, clamp((s1-.75)/.25,0,1)*(1-s2));
+  op(R.list, s2*(1-s3)); op(R.out, clamp((s2-.7)/.3,0,1)*(1-clamp((s3-.85)/.15,0,1)));
+  setT(R.map, lerp(0,-52,easeIO(clamp(s2*1.6,0,1))), 0);
+  R.items.forEach((t,k)=>{const sg=clamp(s2*6-k,0,1); op(t,sg)});
+  op(R.m1, clamp(s3*4,0,1)*(1-s4)); op(R.m2, clamp(s3*4-1,0,1)*(1-s4)); op(R.m3, clamp(s3*4-2,0,1)*(1-s4));
+  op(R.edit, clamp((s3-.8)/.2,0,1)*(1-clamp((s4-.15)/.15,0,1)));
+  op(R.foot, s4);
+  drawOn(R.alt, clamp((s4-.15)/.55,0,1));
+  op(R.route, 1-s4*.65);
+  const f1=clamp((s4-.4)/.55,0,1);
+  const pt2=ptAt(R.alt,lerp(.02,.98,easeIO(f1)));
+  setT(R.you,pt2.x,pt2.y); setT(R.yh,pt2.x,pt2.y);
+  op(R.v2, clamp((s4-.8)/.2,0,1));
+}},
+});
+
+/* ---------------- 35 · CIRCLE OF COMPETENCE ---------------- */
+TOPICS.push({
+n:35,id:'circ',part:4,title:'The Circle of Competence',
+one:'Skill is local. Know the circle where you truly see the seams, decide big inside it, and grow it slowly at the edge.',
+what:[
+ 'A brilliant doctor can be a hopeless investor. A gifted engineer can misread a restaurant deal. Skill is not a general glow — it is local. Around each of us sits a circle where we genuinely know what we are doing, and the edge of that circle is where the surprises live.',
+ '<b>The circle of competence</b> — a phrase Warren Buffett made famous in investing — is the honest map of that area. Outside it, the same confident moves that win inside tend to lose: the ground changed, and the player did not notice.'
+],
+why:[
+ '<b>Inside the circle, you see the seams.</b> Deep knowledge shows the exceptions, the failure modes, the “well, actually” details that summaries skip. That is where judgement comes from.',
+ '<b>Outside it, luck wears skill’s clothes.</b> A win from the outside feels identical to a win from the inside — so one lucky bet invites a bigger careless one.',
+ '<b>The edge is the classroom.</b> The circle is not a cage. Studied patiently, with honest feedback, its boundary moves outward. The trap is pretending the boundary is not there.'
+],
+life:[
+ '<b>The founder’s side quest.</b> A superb baker reads flour futures like poetry — and term sheets like poetry too. Inside circle: baking. Outside: term sheets.',
+ '<b>The confident uncle.</b> Strong opinions on monetary policy at dinner; his own portfolio is a coin flip. Volume of voice is not inside-circle evidence.',
+ '<b>The specialist’s hire.</b> A manager defers data-architecture calls to the data lead and sleeps well. Knowing what to delegate is circle-knowledge in action.'
+],
+use:[
+ '<b>Draw your honest circle.</b> List where you have real reps and real feedback — not interest, reps. The list is shorter than pride suggests; that is fine.',
+ '<b>Run the edge test on big calls.</b> Could I explain why this works? Do I know how it fails? Would I still choose it if nobody were watching?',
+ '<b>Keep big stakes inside.</b> Large, irreversible decisions belong inside the circle; small, reversible ones are cheap education outside it.',
+ '<b>Expand by annexation.</b> Pick one adjacent area, study it properly, and let the border move a ring at a time — not on a whim.'
+],
+take:[
+ 'Skill is local; confidence should be local too.',
+ 'Outside the circle, wins are rented, not owned.',
+ 'Grow the border slowly — it is the only classroom that counts.'
+],
+ask:'Is this decision inside my circle — or inside my ego?',
+demo:{
+vb:[760,430],
+build(S){const g=S.svg,R=S.refs;
+  R.fill=E('circle',{cx:290,cy:230,r:120,fill:'var(--green-soft)',opacity:.55},g);
+  R.ring=E('circle',{class:'sv-g',cx:290,cy:230,r:120,fill:'none'},g);
+  for(let k=0;k<26;k++){const rr=24+(k%4)*25,a=k*2.39;
+    E('circle',{class:'sv-dot',cx:290+rr*Math.cos(a),cy:230+rr*Math.sin(a),r:1.8,opacity:.22},g)}
+  R.cl=T('YOUR CIRCLE OF COMPETENCE',{class:'sv-l','text-anchor':'middle',x:290,y:96},g);
+  T('EVERYTHING ELSE',{class:'sv-l',x:600,y:76},g);
+  R.miss=[];
+  const ms=[['A CRYPTO TIP',560,120],['A FRIEND’S STARTUP',620,240],['A HOT STOCK RUMOR',540,340]];
+  R.mlabels=[];
+  ms.forEach(m2=>{const grp=E('g',{opacity:0},g);
+    E('path',{class:'sv-r',d:'M'+(m2[1]-9)+','+(m2[2]-9)+' l18,18 M'+(m2[1]+9)+','+(m2[2]-9)+' l-18,18'},grp);
+    R.mlabels.push(grp)});
+  T('A CRYPTO TIP',{class:'sv-l2',x:560,y:92},g).setAttribute('opacity',0);
+  T('A FRIEND’S STARTUP',{class:'sv-l2','text-anchor':'middle',x:620,y:272},g).setAttribute('opacity',0);
+  T('A HOT STOCK RUMOR',{class:'sv-l2',x:452,y:368},g).setAttribute('opacity',0);
+  R.ml=[g.childNodes[g.childNodes.length-3],g.childNodes[g.childNodes.length-2],g.childNodes[g.childNodes.length-1]];
+  R.hit=[];
+  const hs=[['RECIPE R&D',225,180],['SUPPLIER DEALS',345,205],['TEAM TRAINING',270,300]];
+  hs.forEach(h2=>{const grp=E('g',{opacity:0},g);
+    E('path',{class:'sv-g',d:'M'+(h2[1]-8)+','+h2[2]+' l7,8 l14,-16'},grp);
+    R.hit.push(grp)});
+  R.hl=[T('RECIPE R&D',{class:'sv-gr',x:225,y:158},g),T('SUPPLIER DEALS',{class:'sv-gr',x:345,y:232},g),T('TEAM TRAINING',{class:'sv-gr',x:270,y:326},g)];
+  R.hl.forEach(t=>t.setAttribute('opacity',0));
+  R.you=E('circle',{class:'sv-dot',r:6},g);
+  R.yh=E('circle',{class:'sv-halo',r:10},g);
+  R.pr=[];
+  const probes=['CAN I EXPLAIN WHY IT WORKS?','DO I KNOW HOW IT FAILS?','WOULD I BET MY OWN MONEY?'];
+  R.pr=[pill(g,600,150,probes[0],'sv-pill'),pill(g,600,206,probes[1],'sv-pill'),pill(g,600,262,probes[2],'sv-pill')];
+  R.edge=pill(g,600,318,'THE EDGE IS THE CLASSROOM','sv-pilla');
+  R.ann=pill(g,290,96,'ANNEXED: SUPPLY CHAINS','sv-pillg');
+},
+scenes:[
+ {t:'The circle',anim:1600,hold:2000,
+  what:'A green circle appears on the map of everything you could invest in, try, or advise on. Inside it: the ground you know cold. Outside: everything else.',
+  why:'Everyone has a circle, whether they draw it or not. The only choice is whether you know where yours ends.'},
+ {t:'Outside the circle',anim:3000,hold:2200,
+  what:'The dot walks out to three tempting spots — a crypto tip, a friend’s startup, a hot rumor. Each one gets a red X.',
+  why:'Same person, same intelligence, different ground. Outside the circle the seams are invisible, so every pitch looks as good as the last one that worked.'},
+ {t:'Inside the circle',anim:2200,hold:2100,
+  what:'The dot comes home and three checks light up: recipe R&D, supplier deals, team training. Quiet, repeatable wins.',
+  why:'Inside the circle you can see why things work and how they break — so decisions rest on details, not on vibes borrowed from someone else’s conviction.'},
+ {t:'The edge test',anim:2200,hold:2100,
+  what:'The dot walks to the rim and faces three questions, stacked like border control: can I explain it, do I know how it fails, would I bet my own money?',
+  why:'The test separates interest from competence. Passing all three is the green light; failing one usually means the edge — not the centre — is where you are standing.'},
+ {t:'Slow expansion',anim:2200,hold:2300,
+  what:'The circle breathes outward one ring: a new band labelled “annexed: supply chains” joins the territory. Grown by study, not by mood.',
+  why:'Circles expand through deliberate learning at the boundary. Slow annexation compounds; leaps into the dark just move the surprises further out.'}
+],
+apply(S,i,p){const P=k=>SP(i,p,k),s0=P(0),s1=P(1),s2=P(2),s3=P(3),s4=P(4),R=S.refs;
+  op(R.fill, clamp(s0*2,0,1)*.55); op(R.ring, clamp(s0*2,0,1));
+  op(R.cl, clamp(s0*2,0,1)*(1-s4));
+  const wps=[[290,230],[560,120],[560,120],[620,240],[620,240],[540,340],[540,340],[290,230]];
+  const f=clamp(s1*7,0,7), k=Math.min(6,Math.floor(f)), tt=easeIO(f-k);
+  let px=lerp(wps[k][0],wps[k+1][0],tt), py=lerp(wps[k][1],wps[k+1][1],tt);
+  const ew=easeIO(clamp((s3-.1)/.5,0,1));
+  px=lerp(px,375,ew); py=lerp(py,145,ew);
+  setT(R.you,px,py); setT(R.yh,px,py);
+  op(R.you, clamp(s0*2,0,1)); op(R.yh, clamp(s0*2,0,1)*.55);
+  const mfade=1-clamp((s2-.1)/.3,0,1);
+  R.mlabels.forEach((m2,j)=>op(m2, clamp(s1*7-(1.4+j*2),0,1)*mfade));
+  R.ml.forEach((t,j)=>op(t, clamp(s1*7-(1.4+j*2),0,1)*mfade));
+  R.hit.forEach((h2,j)=>op(h2, clamp(s2*5-(1+j*1.3),0,1)*(1-s3*.5)));
+  R.hl.forEach((t,j)=>op(t, clamp(s2*5-(1+j*1.3),0,1)*(1-s3*.5)));
+  R.pr.forEach((c2,j)=>{const sg=clamp(s3*4-j,0,1); op(c2,sg*(1-s4)); setT(c2,0,lerp(20,0,easeIO(sg)))});
+  op(R.edge, clamp((s3-.8)/.2,0,1)*(1-s4));
+  const ring=lerp(120,152,easeIO(clamp((s4-.25)/.5,0,1)));
+  R.ring.setAttribute('r',String(ring)); R.fill.setAttribute('r',String(ring));
+  op(R.ann, clamp((s4-.6)/.25,0,1));
+}},
+});
+
+/* ---------------- 36 · DIALECTICAL THINKING ---------------- */
+TOPICS.push({
+n:36,id:'dlec',part:4,title:'Dialectical Thinking',
+one:'Two opposite ideas can both hold truth. Push them together — not to crown a winner, but to forge a third option neither could reach alone.',
+what:[
+ 'Most arguments are staged as a fight: one side must lose. Dialectical thinking stages it as a forge instead. A claim — the <b>thesis</b> — meets its serious opposition — the <b>antithesis</b> — and the heat of their clash is used to cast a third thing: a <b>synthesis</b> that keeps what was alive in both.',
+ 'You have met its children already: strong opinions, held loosely. Move fast without breaking trust. Work in sprints, rest on schedule. Each is a higher answer that refuses to pick between two values that both deserved a seat.'
+],
+why:[
+ '<b>Each side guards a real value.</b> “Ship faster” protects momentum; “think deeper” protects quality. Calling one side stupid throws away the very thing it was defending.',
+ '<b>The clash exposes hidden assumptions.</b> When two reasonable positions collide, the fight is usually about an unstated premise — and unstated premises, once named, can be redesigned.',
+ '<b>Synthesis beats compromise.</b> A compromise splits the difference, so both values lose half. A synthesis re-frames the week, the policy or the product so both values win — on a schedule.'
+],
+life:[
+ '<b>The schedule debate.</b> “Daily standups!” vs “deep work blocks!” becomes: standups on three mornings, Tuesday and Thursday sealed for depth. The calendar keeps both promises.',
+ '<b>The pricing argument.</b> “Premium pricing” vs “grow the base” becomes tiers: a free lane that feeds a paid lane.',
+ '<b>The internal tug.</b> “Save money” vs “invest in myself” becomes a standing rule: save most of it, ring-fence a slice for learning. The tug dissolves into policy.'
+],
+use:[
+ '<b>Steel-man before you counter.</b> State the other side so well its owner would nod. The synthesis needs both values alive — weak versions produce weak forges.',
+ '<b>Hunt the hidden premise.</b> Ask: what assumption makes these two seem incompatible? That sentence is usually the exit door.',
+ '<b>Draft the third option.</b> Design a plan where both values get scheduled — not split, scheduled. If one value only wins on paper, keep forging.',
+ '<b>Let it climb.</b> Today’s synthesis is tomorrow’s thesis. Keep the staircase going instead of defending the last step you reached.'
+],
+take:[
+ 'Two truths can clash without either being false.',
+ 'A clash of good ideas points at a hidden assumption.',
+ 'Synthesis schedules both values; compromise halves them.'
+],
+ask:'What if both sides are guarding real truths — and both belong in the plan?',
+demo:{
+vb:[760,430],
+build(S){const g=S.svg,R=S.refs;
+  R.th=E('g',{opacity:0},g);
+  E('rect',{class:'sv-ndg',x:70,y:106,width:220,height:46,rx:8},R.th);
+  T('THESIS — “SHIP FASTER”',{class:'sv-tb','text-anchor':'middle',x:180,y:134},R.th);
+  R.thc=[pill(g,180,190,'MOMENTUM','sv-pill'),pill(g,180,230,'REAL FEEDBACK','sv-pill'),pill(g,180,270,'ENERGY','sv-pill')];
+  R.an=E('g',{opacity:0},g);
+  E('rect',{class:'sv-ndt',x:470,y:106,width:220,height:46,rx:8},R.an);
+  T('ANTITHESIS — “THINK DEEPER”',{class:'sv-tb','text-anchor':'middle',x:580,y:134},R.an);
+  R.anc=[pill(g,580,190,'QUALITY','sv-pill'),pill(g,580,230,'FEWER BUGS','sv-pill'),pill(g,580,270,'CLEAR HEADS','sv-pill')];
+  R.spk=E('g',{opacity:0},g);
+  E('path',{class:'sv-r',d:'M372,118 L388,130 M388,118 L372,130 M380,112 V136'},R.spk);
+  R.pre=pill(g,380,330,'HIDDEN PREMISE: SPEED & DEPTH SHARE ONE MODE','sv-pilla');
+  R.sy=E('g',{opacity:0},g);
+  E('rect',{class:'sv-ndg',x:270,y:34,width:220,height:46,rx:8},R.sy);
+  T('SYNTHESIS — “SPRINT, THEN SYNC”',{class:'sv-tb','text-anchor':'middle',x:380,y:62},R.sy);
+  R.week=[];
+  for(let k=0;k<6;k++){const x=250+k*44;
+    const t=E('g',{},R.sy);
+    E('rect',{class:k<4?'sv-ndg':'sv-ndt',x:x,y:110,width:38,height:30,rx:5},t);
+    T('D'+(k+1),{class:'sv-l2','text-anchor':'middle',x:x+19,y:129},t);
+    R.week.push(t)}
+  T('4 SPRINT DAYS',{class:'sv-gr','text-anchor':'middle',x:309,y:166},R.sy);
+  T('2 SYNC DAYS',{class:'sv-l','text-anchor':'middle',x:479,y:166},R.sy);
+  R.nosplit=pill(g,380,214,'NOT A SPLIT — A SCHEDULE','sv-pillg');
+  R.st=[];
+  const stx=[90,215,340],sty=[332,298,264];
+  for(let k=0;k<3;k++){const s2g=E('g',{opacity:0},g);
+    E('rect',{class:'sv-nd',x:stx[k],y:sty[k],width:110,height:18,rx:4},s2g);
+    T('T'+(k+1),{class:'sv-tb',x:stx[k]+8,y:sty[k]-8},s2g);
+    R.st.push(s2g)}
+  T('THESIS',{class:'sv-l',x:104,y:366},g).setAttribute('opacity',0);
+  T('SYNTHESIS = NEW THESIS',{class:'sv-l',x:229,y:332},g).setAttribute('opacity',0);
+  T('THE CLIMB CONTINUES',{class:'sv-l',x:354,y:298},g).setAttribute('opacity',0);
+  R.slab=[g.childNodes[g.childNodes.length-3],g.childNodes[g.childNodes.length-2],g.childNodes[g.childNodes.length-1]];
+  R.cdot=E('circle',{class:'sv-dot',r:5.5},g);
+  R.fin=pill(g,560,352,'TODAY’S ANSWER BECOMES TOMORROW’S THESIS','sv-pillg');
+},
+scenes:[
+ {t:'The thesis',anim:1600,hold:2000,
+  what:'A green badge takes the left podium: “ship faster.” Underneath, its values line up — momentum, real feedback, energy.',
+  why:'A position is only weak in caricature. Stated at full strength, the thesis is a set of protected values — exactly what a good synthesis will need later.'},
+ {t:'The antithesis',anim:1600,hold:2000,
+  what:'A teal badge takes the right podium: “think deeper.” Its own values file in — quality, fewer bugs, clear heads.',
+  why:'The opposition is not an obstacle to the argument; it is the other half of it. Steel-manning it now is what makes the forge hot enough later.'},
+ {t:'The clash',anim:2400,hold:2100,
+  what:'The podiums slide together and sparks fly at the point of contact. Out of the heat, a hidden premise is pulled into the light: “speed and depth share one mode.”',
+  why:'Two good positions can only fight if something unseen divides them. Naming that hidden premise is the moment an argument stops being a tug-of-war.'},
+ {t:'The synthesis',anim:2400,hold:2200,
+  what:'A new badge rises above both: “sprint, then sync.” Beneath it a week takes shape — four sprint days, two sync days. Not a split, a schedule.',
+  why:'The synthesis keeps both protected values by giving each its own time. Momentum and depth stop competing for the same hours and start sharing the same week.'},
+ {t:'The climb',anim:2400,hold:2300,
+  what:'A staircase appears: T1 was yesterday’s fight, T2 is today’s synthesis — and the dot keeps climbing. Today’s answer becomes tomorrow’s thesis.',
+  why:'Dialectic is not a one-time fix but a gait. Teams and thinkers who keep the staircase running compound their judgement; those who defend the last step freeze it.'}
+],
+apply(S,i,p){const P=k=>SP(i,p,k),s0=P(0),s1=P(1),s2=P(2),s3=P(3),s4=P(4),s5=P(5),R=S.refs;
+  const cl=easeIO(clamp(s2*1.6,0,1));
+  const fade=easeIO(clamp((s3-.1)/.35,0,1)), ghost=(1-fade*.92)*(1-s4*.05);
+  op(R.th, clamp(s0*2.4,0,1)*ghost);
+  R.thc.forEach((c2,k)=>{const sg=clamp(s0*5-(1+k),0,1); op(c2,sg*ghost); setT(c2, 66*cl, lerp(16,0,easeIO(sg)))});
+  op(R.an, clamp(s1*2.4,0,1)*ghost);
+  R.anc.forEach((c2,k)=>{const sg=clamp(s1*5-(1+k),0,1); op(c2,sg*ghost); setT(c2, -66*cl, lerp(16,0,easeIO(sg)))});
+  setT(R.th, 66*cl, 0); setT(R.an, -66*cl, 0);
+  op(R.spk, clamp((s2-.45)/.3,0,1)*(1-clamp((s3-.5)/.3,0,1))*(.6+.4*Math.sin(s2*30)));
+  op(R.pre, clamp((s2-.7)/.3,0,1)*(1-clamp((s3-.15)/.15,0,1)));
+  op(R.sy, clamp(s3*2.2,0,1));
+  R.week.forEach((t,k)=>op(t, clamp(s3*8-(2+k),0,1)));
+  op(R.nosplit, clamp((s3-.75)/.25,0,1));
+  R.st.forEach((sg,k)=>op(sg, clamp(s4*5-k,0,1)));
+  R.slab.forEach((t,k)=>op(t, clamp(s4*5-k,0,1)));
+  const cf=clamp(s4*4-.6,0,3);
+  const cxs=[200,325,450], cys=[326,292,258];
+  const ci=Math.min(2,Math.floor(cf)), ct2=cf-ci;
+  setT(R.cdot, lerp(cxs[ci],cxs[Math.min(2,ci+1)],ct2), lerp(cys[ci],cys[Math.min(2,ci+1)],ct2)-4);
+  op(R.cdot, clamp((s4-.2)/.2,0,1));
+  op(R.fin, clamp((s4-.85)/.15,0,1));
+}},
+});
+/* ================================================================
    BOOT · renderers & page wiring
 ================================================================ */
 const PLAYERS=[];
@@ -3841,7 +4692,7 @@ function renderModules(){
 /* ---------- sidebar ---------- */
 function renderSidebar(){
   const side=$('#sideNav');
-  let html='<div class="side-head"><div class="sh-k">A VISUAL FIELD GUIDE</div><h1>The Mental Atlas</h1><p>Twenty-nine models for a clearer mind.</p></div>';
+  let html='<div class="side-head"><div class="sh-k">A VISUAL FIELD GUIDE</div><h1>The Mental Atlas</h1><p>Thirty-six models for a clearer mind.</p></div>';
   PARTS.forEach((p,pi)=>{
     html+='<div class="nav-group"><div class="nav-gk">'+p.title.toUpperCase()+'</div>';
     TOPICS.filter(t=>t.part===pi).forEach(t=>{
@@ -3850,7 +4701,7 @@ function renderSidebar(){
     html+='</div>';
   });
   html+='<div class="nav-group"><div class="nav-gk">EXTRAS</div><a class="nav-item" href="#revision"><span class="ni-num">·</span><span class="ni-body"><span class="ni-title">Last-minute revision sheet</span></span></a></div>';
-  html+='<div class="side-foot"><div class="ring-box"><svg viewBox="0 0 56 56"><circle class="ring-bg" cx="28" cy="28" r="24"/><circle class="ring-fg" id="ringFg" cx="28" cy="28" r="24"/></svg><span class="ring-txt" id="ringTxt">0%</span></div><div><div class="sf-k">ATLAS PROGRESS</div><div class="sf-v" id="ringLbl">0 of 29 models</div></div></div>';
+  html+='<div class="side-foot"><div class="ring-box"><svg viewBox="0 0 56 56"><circle class="ring-bg" cx="28" cy="28" r="24"/><circle class="ring-fg" id="ringFg" cx="28" cy="28" r="24"/></svg><span class="ring-txt" id="ringTxt">0%</span></div><div><div class="sf-k">ATLAS PROGRESS</div><div class="sf-v" id="ringLbl">0 of 36 models</div></div></div>';
   side.innerHTML=html;
 }
 /* ---------- revision ---------- */
